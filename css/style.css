@@ -1,0 +1,109 @@
+:root {
+    --key-playing-color: #74b9ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: helvetica, arial, sans-serif;
+}
+body {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(85, 85, 85);
+}
+
+.piano {
+    width: 1296px;
+    height: 630px;
+    background: #1a1a1a;
+    border-radius: 5px;
+}
+
+.piano .piano-upper {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.piano .piano-upper .piano-speaker {
+    width: 320px;
+    height: 170px;
+    border-radius: 15px;
+    background: radial-gradient(black 15%, transparent 16%) 0 0, radial-gradient(black 15%, transparent 16%) 8px 8px, radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px, radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background-color: #282828;
+    background-size: 16px 16px;
+}
+
+.piano .piano-upper .piano-configuration{
+    width: 500px;
+    padding: 40px 20px;
+    background: #282828;
+    color: #fff;
+    box-sizing: border-box;
+    border-radius: 7px;
+}
+
+.piano .piano-upper .piano-configuration .piano-config {
+   margin-bottom: 25px;
+}
+
+.piano .piano-upper .piano-configuration h4 {
+    margin-bottom: 15px;
+}
+
+.piano .piano-upper .piano-configuration .piano-autoplay select{
+    font-size: 16px;
+}
+
+.piano .piano-upper .piano-configuration .piano-autoplay button {
+    padding: 3px 10px;
+    border-radius: 3px;
+}
+
+.piano .piano-keyboard {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    padding-bottom: 5px;
+}
+
+.piano .piano-keyboard .piano-key {
+    width: 35px;
+    height: 100%;
+    margin: 0 1px;
+    border: 1px solid #000;
+    background: rgb(184, 184, 184);
+    flex-grow: 1;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    font-size: .8rem;
+}
+
+.piano .piano-keyboard .piano-key-white {
+    padding-top: 150px;
+}
+
+.piano .piano-keyboard .piano-black-wrapper {
+    position: relative;
+}
+
+.piano .piano-keyboard .piano-black-wrapper .piano-key {
+    position: absolute;
+    top: 0;
+    height: 60%;
+    background: #000;
+    left: -17.5px;
+    color: rgb(206, 206, 206);
+}
+
+.key-playing {
+    background: var(--key-playing-color) !important;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Virtual Piano</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="piano">
+        <div class="piano-upper">
+            <div class="piano-speaker">
+
+            </div>
+            <div class="piano-configuration">
+                <div class="piano-config">
+                    <h4>PIANO</h4>
+                    <label for="letterNotes"><input type="radio" class="control" name="notes" value="letterNote"
+                            checked> Letter Notes
+                    </label>
+                    <label for="keyboard"><input type="radio" class="control" name="notes" value="keyboard"> Keyboard
+                    </label>
+                    <label for="none"><input type="radio" class="control" name="notes" value="none"> None </label>
+                </div>
+                <div class="piano-autoplay">
+                    <h4>AUTOPLAY</h4>
+                    <select name="songName" id="songName">
+                        <option value="1" selected>Happy Birthday</option>
+                        <option value="2">Prem Geet</option>
+                        <option value="3">Machhi Marana</option>
+                        <option value="4">Merry Christmas</option>
+                        <option value="5">Asarai Mahina</option>
+                    </select>
+                    <label for="speed">
+                        Speed:
+                        <select name="speed" id="speed">
+                            <option value="1">Slow</option>
+                            <option value="2" selected>Normal</option>
+                            <option value="3">Fast</option>
+                        </select>
+                    </label>
+                    <button type="button" value="play" class="play-btn">Play</button>
+                </div>
+            </div>
+            <div class="piano-speaker">
+
+            </div>
+        </div>
+        <div class="piano-keyboard">
+            <!-- <button class="piano-key piano-key-white"></button>
+            <div class="piano-black-wrapper">
+                <button class="piano-key piano-key-black"></button>
+            </div>
+            <button class="piano-key piano-key-white"></button> -->
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
